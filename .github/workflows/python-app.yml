@@ -45,5 +45,5 @@ jobs:
         timestamp=$(date -u)
         git commit -m "Data updated on ${timestamp}" || exit 0
         git pull --rebase origin main
-        git push https://${{ secrets.RANK }}@github.com/TreeCityWes/HashHead.git HEAD:main
+        git push https://${{ secrets.RANK }}@github.com/TreeCityWes/X1-Validator-Scrape.git HEAD:main
 
