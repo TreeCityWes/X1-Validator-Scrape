@@ -25,7 +25,7 @@ jobs:
         # Replace the below line with any additional dependencies you have
         # pip install -r requirements.txt
     - name: Run Selenium script
-      run: python your-script-name.py
+      run: rank.py
     # Remove lint and test steps if not applicable
     # - name: Lint with flake8
     #   run: |
