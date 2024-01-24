@@ -11,7 +11,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -30,12 +29,12 @@ jobs:
       run: python rank.py
     - name: Commit CSV files
       run: |
-        git config --global user.name 'TreeCityWes'
-        git config --global user.email 'wes@treecitytrading.us'
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
         git add *.csv
-        git commit -m "Add generated CSV files"
+        git commit -m "Add generated CSV files" || echo "No changes to commit"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.RANK }}
         branch: 'main'
