@@ -1,13 +1,18 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 import time
 import csv
 import re
 
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
+# Set up Chrome options for headless execution
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--no-sandbox")  # Required when running as root (e.g., in a container)
+chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
+
+# Instantiate the WebDriver with the options
+driver = webdriver.Chrome(options=chrome_options)
 
 url = 'https://pwa-explorer.x1-testnet.xen.network/validator/0x5355cd9c2cb1327a10b853d49a82f8f131e70887'
 driver.get(url)
