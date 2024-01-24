@@ -1,11 +1,13 @@
 name: Python application
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '*/10 * * * *'
-
-permissions:
-  contents: read
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
