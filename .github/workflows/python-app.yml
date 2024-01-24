@@ -26,24 +26,14 @@ jobs:
     - name: Make Python script executable
       run: chmod +x rank.py
     - name: Run Selenium script
-      run: python3 rank.py  # Changed to execute the script directly
+      run: python3 rank.py  # Execute the script directly
     - name: Commit CSV files
       run: |
         git config --global user.name 'GitHub Actions'
         git config --global user.email 'actions@github.com'
         git add *.csv
         git commit -m "Add generated CSV files" || echo "No changes to commit"
-    - name: Commit and push if it changed
+    - name: Push changes using PAT
       run: |
-        git config user.name "TreeCityWes"
-        git config user.email "wes@treecitytrading.us"
-        git add -A
-        if git diff --cached --quiet; then
-          echo "No changes to commit"
-          exit 0
-        fi
-        timestamp=$(date -u)
-        git commit -m "Data updated on ${timestamp}" || exit 0
         git pull --rebase origin main
         git push https://${{ secrets.RANK }}@github.com/TreeCityWes/X1-Validator-Scrape.git HEAD:main
-
