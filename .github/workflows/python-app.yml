@@ -1,20 +1,21 @@
-name: Python application
+name: Python Application Automation
 
 on:
   schedule:
     - cron: '*/10 * * * *'
 
 jobs:
-  build:
+  scrape-and-commit:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'  # Adjust to your Python version
+        python-version: '3.x'  # Specify your required Python version
 
     - name: Install Chrome
       run: |
@@ -33,17 +34,18 @@ jobs:
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install selenium
+        pip install selenium  # Add other dependencies if necessary
 
-    - name: Run script
-      run: python rank.py
+    - name: Run Python Script
+      run: python rank.py  # Replace with your script name if different
 
-    - name: Commit files
+    - name: Commit and Push Changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add -f *.csv
-        git commit -m "Add generated CSV files" -a || echo "No changes to commit"
+        git commit -m "Update CSV files" -a || echo "No changes to commit"
         git push
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_Token }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
