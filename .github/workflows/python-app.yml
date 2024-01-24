@@ -36,4 +36,4 @@ jobs:
     - name: Pull with rebase
       run: git pull --rebase origin main
     - name: Push changes using PAT
-      run: git push https://${{ secrets.RANK }}@github.com/TreeCityWes/X1-Validator-Scrape.git HEAD:main
+      run: git push https://${{ secrets.Validator }}@github.com/TreeCityWes/X1-Validator-Scrape.git HEAD:main
