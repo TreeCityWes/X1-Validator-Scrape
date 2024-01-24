@@ -3,6 +3,7 @@ name: Python Application Automation
 on:
   schedule:
     - cron: '*/10 * * * *'
+  workflow_dispatch:
 
 jobs:
   scrape-and-commit:
@@ -48,4 +49,3 @@ jobs:
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
