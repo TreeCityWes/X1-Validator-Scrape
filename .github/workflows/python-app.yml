@@ -26,7 +26,7 @@ jobs:
     - name: Make Python script executable
       run: chmod +x rank.py
     - name: Run Selenium script
-      run: python rank.py
+      run: ./rank.py  # Changed to execute the script directly
     - name: Commit CSV files
       run: |
         git config --global user.name 'GitHub Actions'
@@ -36,5 +36,5 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.RANK }}
+        github_token: ${{ secrets.RANK }}  # Make sure this matches your PAT name
         branch: 'main'
