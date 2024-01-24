@@ -27,13 +27,13 @@ jobs:
       run: chmod +x rank.py
     - name: Run Selenium script
       run: python3 rank.py
-    - name: Commit CSV files
+    - name: Commit any changes
       run: |
         git config --global user.name 'GitHub Actions'
         git config --global user.email 'actions@github.com'
-        git add *.csv
-        git commit -m "Add generated CSV files" || echo "No changes to commit"
-    - name: Pull with rebase and push changes using PAT
-      run: |
-        git pull --rebase origin main
-        git push https://${{ secrets.RANK }}@github.com/TreeCityWes/X1-Validator-Scrape.git HEAD:main
+        git add .
+        git commit -m "Add generated CSV files" -a || echo "No changes to commit"
+    - name: Pull with rebase
+      run: git pull --rebase origin main
+    - name: Push changes using PAT
+      run: git push https://${{ secrets.RANK }}@github.com/TreeCityWes/X1-Validator-Scrape.git HEAD:main
