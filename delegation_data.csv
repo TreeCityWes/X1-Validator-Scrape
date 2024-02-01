@@ -11,7 +11,6 @@ Address,Created On,Amount
 0xb3fc28 ... 90f976,"Jan 23, 2024, 03:49 PM UTC",70000.0
 0x280c16 ... c7024e,"Jan 24, 2024, 10:18 AM UTC",50000.0
 0x0eb736 ... 141a1a,"Jan 23, 2024, 05:25 PM UTC",50000.0
-0x1d4072 ... d2cddb,"Jan 23, 2024, 09:27 AM UTC",50000.0
 0x6a24d5 ... db7e63,"Jan 20, 2024, 05:48 PM UTC",50000.0
 0x87df0b ... fefc97,"Jan 22, 2024, 11:34 PM UTC",48000.0
 0xe284ba ... c7c3a5,"Jan 24, 2024, 05:43 PM UTC",40000.53
@@ -89,6 +88,7 @@ Address,Created On,Amount
 0x630379 ... 111a27,"Jan 24, 2024, 03:13 PM UTC",11.0
 0xbaa0be ... 392993,"Jan 22, 2024, 03:00 PM UTC",11.0
 0xf69b55 ... e5b755,"Jan 24, 2024, 02:45 PM UTC",10.9
+0xaccb82 ... eeca97,"Jan 25, 2024, 11:05 AM UTC",10.0
 0xe0a0e6 ... 552b98,"Jan 24, 2024, 09:28 PM UTC",10.0
 0xdfdf6f ... 49da50,"Jan 22, 2024, 12:04 PM UTC",10.0
 0x882b31 ... e3b362,"Jan 24, 2024, 03:11 PM UTC",10.0
@@ -220,6 +220,7 @@ Address,Created On,Amount
 0x9f67a8 ... 8a1529,"Jan 24, 2024, 10:45 PM UTC",1.0
 0x81ba8c ... 034929,"Jan 23, 2024, 02:31 PM UTC",1.0
 0x390011 ... d447b1,"Jan 23, 2024, 02:02 PM UTC",1.0
+0x1d4072 ... d2cddb,"Jan 23, 2024, 09:27 AM UTC",1.0
 0x976057 ... 1231f8,"Jan 23, 2024, 08:35 AM UTC",1.0
 0x0084f2 ... 73bca8,"Jan 23, 2024, 05:29 AM UTC",1.0
 0xbe73d5 ... 20f990,"Jan 23, 2024, 04:13 AM UTC",1.0
