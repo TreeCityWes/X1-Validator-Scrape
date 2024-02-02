@@ -7,8 +7,8 @@ Staking start time,
 Amount staked,
 Amount delegated,
 Staking total,
-Active,
-Voting,
-Downtime,
+Active,Yes
+Voting,No
+Downtime,613696.39 s
 Locked Until,
 Lock (Days),-
