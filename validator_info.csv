@@ -4,9 +4,9 @@ Validator ID,
 Delegate address,0x5355cd9c2cb1327a10b853d49a82f8f131e70887
 Staking start epoch,
 Staking start time,
-Amount staked,
-Amount delegated,
-Staking total,
+Amount staked,"100,096.00 XN"
+Amount delegated,"1,216,353.00 XN"
+Staking total,"1,316,449.00 XN"
 Active,No
 Voting,No
 Downtime,0 s
