@@ -5,9 +5,9 @@ Delegate address,0x5355cd9c2cb1327a10b853d49a82f8f131e70887
 Staking start epoch,
 Staking start time,
 Amount staked,
-Amount delegated,"1,374,549.00 XN"
-Staking total,"1,474,646.00 XN"
-Active,Yes
+Amount delegated,
+Staking total,
+Active,
 Voting,Yes
 Downtime,0 s
 Locked Until,
