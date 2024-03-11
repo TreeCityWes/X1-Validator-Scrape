@@ -6,9 +6,9 @@ Staking start epoch,
 Staking start time,
 Amount staked,
 Amount delegated,
-Staking total,
-Active,
-Voting,
-Downtime,
+Staking total,"1,369,622.00 XN"
+Active,Yes
+Voting,Yes
+Downtime,0 s
 Locked Until,
 Lock (Days),-
