@@ -1,9 +1,9 @@
 Label,Value
 Name,Unknown
-Validator ID,
+Validator ID,8
 Delegate address,0x5355cd9c2cb1327a10b853d49a82f8f131e70887
-Staking start epoch,
-Staking start time,
+Staking start epoch,995
+Staking start time,"Jan 7, 2024, 07:25 PM UTC"
 Amount staked,"100,096.00 XN"
 Amount delegated,"1,269,532.00 XN"
 Staking total,"1,369,628.00 XN"
