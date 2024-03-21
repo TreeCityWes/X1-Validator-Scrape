@@ -1,5 +1,5 @@
 Label,Value
-Name,Unknown
+Name,HashHead.io
 Validator ID,8
 Delegate address,0x5355cd9c2cb1327a10b853d49a82f8f131e70887
 Staking start epoch,995
@@ -9,6 +9,6 @@ Amount delegated,"1,269,545.00 XN"
 Staking total,"1,369,641.00 XN"
 Active,Yes
 Voting,No
-Downtime,231695.93 s
+Downtime,232574.96 s
 Locked Until,
 Lock (Days),-
